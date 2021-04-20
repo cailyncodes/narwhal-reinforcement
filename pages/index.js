@@ -51,7 +51,7 @@ export default function Home({ saying, imagePath }) {
   )
 }
 
-export function getStaticProps() {
+export function getServerSideProps() {
   const props = getData();
   return { props };
 }
