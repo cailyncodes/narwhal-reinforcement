@@ -41,7 +41,9 @@ export default function Home({ saying, imagePath }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>{saying}</h1>
-        <img src={imagePath} />
+        <div className={styles.imageWrapper}>
+          <img src={imagePath} />
+        </div>
       </main>
 
       <footer className={styles.footer}>
